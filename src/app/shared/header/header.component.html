@@ -1,0 +1,64 @@
+<div class='container header' [class.header-back]='background'>
+  <div class="row">
+    <div class="col-md-2 col-sm-2 header-logo">Новые <span>Ватутники</span></div>
+    <div class="header-mobile-button only-mobile"  (click)="showMenu = !showMenu">
+      <span class="mobile-button" [class.close]='showMenu'></span>
+    </div>
+    <div class="header__wrap" *ngIf='showMenu'>
+      <div class="header-logo header-logo--menu">Новые <span>Ватутники</span></div>
+      <div class="header-nav">
+        <ul class="header-nav__inner">
+          <li class="header-nav__item">
+            <a (click)="goTo('/home')"  class="header-nav__link">О райне</a>
+          </li>
+          <li class="header-nav__item">
+              <a (click)="goTo('/housing')" class="header-nav__link">Купить</a>
+          </li>
+          <li class="header-nav__item">
+              <a href="" class="header-nav__link">Условия покупки</a>
+          </li>
+          <li class="header-nav__item">
+              <a href="" class="header-nav__link">Контакты</a>
+          </li>
+          <li class="header-nav__item">
+              <a href="" class="header-nav__link">vatutinki.life</a>
+            </li>  
+        </ul>     
+      </div>
+      <div class="header-right">
+        <ul class="header-rigth__inner">
+          <li class="haeder-right__item">
+            <a href="" class="header-right__link">Сравнение</a>
+          </li>
+          <li class="haeder-right__item">
+            <a href="" class="header-right__link">Личный кабинет</a>
+          </li>
+          <li class="haeder-right__item">
+            <button class="header-right__phone">+7 495 746-23-23</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-9 only-desktop">
+      <div class="header-nav">
+        <ul class="header-nav__inner">
+          <li class="header-nav__item">
+            <a (click)="goTo('/home')" class="header-nav__link">О райне</a>
+          </li>
+          <li class="header-nav__item">
+              <a (click)="goTo('/housing')" class="header-nav__link">Купить</a>
+          </li>
+          <li class="header-nav__item">
+              <a href="" class="header-nav__link">Условия покупки</a>
+          </li>
+          <li class="header-nav__item">
+              <a href="" class="header-nav__link">Контакты</a>
+          </li>
+          <li class="header-nav__item">
+              <a href="" class="header-nav__link">vatutinki.life</a>
+            </li>  
+        </ul>     
+      </div>
+    </div>
+  </div>
+</div>

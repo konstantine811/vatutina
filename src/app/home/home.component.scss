@@ -1,0 +1,100 @@
+@import '../../assets/style/_var';
+
+@media only screen and (min-width: $breakpoint-tablet) {
+    @import './home.component.desktop' 
+}
+
+:host {
+    position: relative;
+    display: block;
+}
+.home {
+    position: relative;
+}
+.home-back {
+   width: 100%;
+   top: 0;
+}
+.home-slide {
+   height: 800px;
+   background-size: cover;
+   padding-bottom: 350px;
+}
+.home-slide--one {
+   background-image: url('../../assets/image/viz1.jpg');
+}
+.home-slide--second {
+    background-image: url('../../assets/image/viz2.jpg');
+}
+.home-slide--third {
+    background-image: url('../../assets/image/viz3.jpg');
+}
+.home-txt {
+    padding-top: 120px;
+    margin: 0 auto;
+    width: 75%;
+    max-height: 100%;
+    overflow: hidden;
+    color: white;
+}
+.home-txt__title {
+    font-size: 26px;
+}
+.home-txt__description {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.home-button-select {
+    width: 100%;
+    height: 100%;
+}
+.home-button-select__inner {
+    width: 200px;
+    height: auto;
+    background-color:  blueviolet;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-left: 12%;
+}
+.home-nav {
+    position: absolute;
+    top: 468px;
+    width: 100%;
+    height: 100%;
+}
+.home-nav__selected {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.home-nav__item {
+    display: inline-block;
+    position: relative;
+    max-width: 73px;
+    width: 15%;
+    min-width: 55px; 
+    padding-top: 66px;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        border-radius: 50%;
+        background-color: white;
+    }
+}
+
+.home-offer {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(silver, 0.8);
+    overflow: hidden;
+    position: absolute;
+    top: 650px;
+} 

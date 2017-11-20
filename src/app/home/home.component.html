@@ -1,0 +1,128 @@
+<div class="home">
+  <ngx-carousel class='home-back' [inputs]='carouselOne' (carouselLoad)='myfunc($event)'>
+    <ngx-item NgxCarouselItem>
+     <div class="home-slide home-slide--one">
+        <div class="home-txt">
+            <h1 class="home-txt__title">Школы</h1>
+            <p class="home-txt__description">В первую очередь при проектировании
+              района мы позаботились о самых главных жителях - детях. На территории района
+              уже открыта общеобразовательная школа на 1 100 учеников с углубленным изучением
+              иностранных языков, естественных наук и математики.
+            </p>
+        </div>
+        <div class="home-button-select only-mobile">
+          <button (click)="goTo('/housing')" class="home-button-select__inner">Выбрать квартиру</button>
+        </div>
+        <div class="home-offer only-mobile">
+            <div class="home-offer__head">
+              <span class="home-offer__data">14/07</span>
+              <span class="home-offer__title">Акция</span>
+            </div>
+            <div class="home-offer__description">
+              Только 1 месяц для покупателей квартир в Новых Ватутинках действует программа "Выгода"
+            </div>
+        </div>
+     </div>
+    </ngx-item>
+    <ngx-item NgxCarouselItem>
+      <div class="home-slide home-slide--second">
+          <div class="home-txt">
+              <h1 class="home-txt__title">Новые Ватутинки</h1>
+              <p class="home-txt__description">В первую очередь при проектировании
+                  района мы позаботились о самых главных жителях.
+              </p>
+          </div>
+          <div class="home-button-select only-mobile">
+              <button (click)="goTo('/housing')" class="home-button-select__inner">Выбрать квартиру</button>
+          </div>
+          <div class="home-offer only-mobile">
+              <div class="home-offer__head">
+                <span class="home-offer__data">14/07</span>
+                <span class="home-offer__title">Ипотека</span>
+              </div>
+              <div class="home-offer__description">
+                Только 1 месяц для покупателей квартир в Новых Ватутинках действует программа "Выгода"
+              </div>
+          </div>
+      </div>
+    </ngx-item>
+    <ngx-item NgxCarouselItem>
+        <div class="home-slide home-slide--third">
+            <div class="home-txt">
+                <h1 class="home-txt__title">Квартиры с отделкой в новых корпусах от 2,5 млн рублей</h1>
+            </div>
+            <div class="home-button-select only-mobile">
+                <button (click)="goTo('/housing')" class="home-button-select__inner">Выбрать квартиру</button>
+            </div>
+            <div class="home-offer only-mobile">
+                <div class="home-offer__head">
+                  <span class="home-offer__data">14/07</span>
+                  <span class="home-offer__title">Собития</span>
+                </div>
+                <div class="home-offer__description">
+                  Только 1 месяц для покупателей квартир в Новых Ватутинках действует программа "Выгода"
+                </div>
+            </div>
+        </div>
+    </ngx-item>
+    <button NgxCarouselPrev class='leftRs only-desktop'>&lt;</button>
+    <button NgxCarouselNext class='rightRs only-desktop'>&gt;</button>
+  </ngx-carousel>
+  <div class="home-nav">
+    <ul class="home-nav__selected">
+      <li class="home-nav__item">
+        <span class="only-desktop home-nav__text">Новые Ватутинки</span>
+      </li>
+      <li class="home-nav__item">
+          <span class="only-desktop home-nav__text">подробнее</span>
+      </li>
+      <li class="home-nav__item">
+          <span class="only-desktop home-nav__text">поликлиники</span>
+      </li>
+      <li class="home-nav__item">
+          <span class="only-desktop home-nav__text">детские сады</span>
+      </li>
+      <li class="home-nav__item">
+          <span class="only-desktop home-nav__text">гипермаркеты</span>
+      </li>
+    </ul>
+  </div>
+  <div class="home-offer only-desktop">
+    <div class="home-offer__inner">
+      <div class="home-offer__head">
+        <span class="home-offer__data">14/07</span>
+        <span class="home-offer__title">Акция</span>
+      </div>
+      <div class="home-offer__description">
+        Только 1 месяц для покупателей квартир в Новых Ватутинках действует программа "Выгода"
+      </div>
+    </div>
+    <div class="home-offer__inner">
+        <div class="home-offer__head">
+          <span class="home-offer__data">14/07</span>
+          <span class="home-offer__title">Ипотека</span>
+        </div>
+        <div class="home-offer__description">
+          Только 1 месяц для покупателей квартир в Новых Ватутинках действует программа "Выгода"
+        </div>
+      </div>
+      <div class="home-offer__inner">
+          <div class="home-offer__head">
+            <span class="home-offer__data">14/07</span>
+            <span class="home-offer__title">События</span>
+          </div>
+          <div class="home-offer__description">
+            Только 1 месяц для покупателей квартир в Новых Ватутинках действует программа "Выгода"
+          </div>
+        </div>
+        <div class="home-offer__inner">
+            <div class="home-offer__head">
+              <span class="home-offer__data">14/07</span>
+              <span class="home-offer__title">События</span>
+            </div>
+            <div class="home-offer__description">
+              Только 1 месяц для покупателей квартир в Новых Ватутинках действует программа "Выгода"
+            </div>
+          </div>
+  </div>
+</div>

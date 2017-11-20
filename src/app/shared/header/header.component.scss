@@ -1,0 +1,106 @@
+@import '../../../assets/style/_var';
+
+@media only screen and (min-width: $breakpoint-tablet) {
+    @import './header.component.desktop' 
+}
+:host {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    .header {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-shadow: inset 1px 32px 45px -19px black;
+    }
+    .header-back {
+        box-shadow: none;
+        background-color: silver;
+    }
+    .header-logo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 15px;
+        padding-top: 15px;
+
+        span {
+            display: block;
+        }
+    }
+    .header-logo--menu {
+        color: black;
+    }
+    .header-mobile-button {
+        position: absolute;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .mobile-button {
+        position: relative;
+        display: inline-block;
+        height: 3px;
+        width: 30px;
+        background-color: white;
+        right: 0;
+        top: 0;
+        margin-right: 10px;
+        z-index: 99;
+        transition: all 0.5s ease; 
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 30px;
+            background-color: white;
+            transition: all 0.5s ease; 
+        }
+        &:before {
+            bottom: 10px;
+        }
+        &:after {
+            top: 10px;
+        }
+    }
+    .close {
+        background-color: none;
+        top: 0;
+        &:before, &:after {
+            background-color: silver;
+        }
+        &:before {
+            transform: rotate(135deg);
+            top: 0px;
+        }
+        &:after {
+            transform: rotate(45deg);
+            top: 0;    
+        }
+    }
+    .header__wrap {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        top: 0;
+        left: 0;
+    }
+
+    .header-nav__inner, .header-rigth__inner {
+        width: 100%;
+        height: 100%;
+        padding: 0px 0px 0 15px;
+        list-style: none;
+    }
+    .header-nav__link, .header-right__link {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding-top: 10px;
+    }
+}
